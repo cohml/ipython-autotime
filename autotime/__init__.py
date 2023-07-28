@@ -1,7 +1,5 @@
 from __future__ import print_function
 
-from ._version import version as __version__
-
 from time import strftime, localtime
 
 try:
@@ -55,4 +53,3 @@ def load_ipython_extension(ip):
 def unload_ipython_extension(ip):
     ip.events.unregister('pre_run_cell', start)
     ip.events.unregister('post_run_cell', stop)
-
